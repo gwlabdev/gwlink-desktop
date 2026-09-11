@@ -20,4 +20,4 @@ Only the input files are here. Heads and budgets are produced by your own run.
 
 ## Milford
 
-The GMDSI Milford model (MODFLOW-USG, 190,080 cells, CLN wells) is also in the validation suite, but it is 54 MB and published under GPL-3.0 by GMDSI, so it is not copied here. Clone [gmdsi/GMDSI_notebooks](https://github.com/gmdsi/GMDSI_notebooks) and import `worked_examples/4a. Milford Files for Probabilistic Capture Zone Analysis WE/calibration`. The model has no projection file. GWlink asks for one, and the right answer is EPSG:3437 (NAD83 / New Hampshire, US survey feet).
+The GMDSI Milford model (MODFLOW-USG, 190,080 cells, CLN wells) is also in the validation suite, but it is 54 MB and published by GMDSI under AGPL-3.0, so it is not copied here. Clone [gmdsi/gmdsi](https://github.com/gmdsi/gmdsi) and import `tutorials/worked_examples/milford_files/calibration`. The deck carries no projection, so type 3437 in the EPSG field of the import dialog (NAD83 / New Hampshire, US survey feet) to see it on the map.
