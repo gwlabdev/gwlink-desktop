@@ -41,7 +41,7 @@ The round trip is a strong check on the file layer. It catches a package silentl
 
 ## Examples
 
-Four small decks under [examples/](examples/) to import and run on your first session. Freyberg USG with 25 stress periods, a DISV Voronoi grid, TWRI, and an SFR chain coupled to lakes. Each one is public domain or GWLab's own, and each is part of the validation suite above.
+Four GWlink workspaces under [examples/](examples/), ready to open on your first session. Each holds the project, the model GWlink wrote, the run where it fits, and the published deck it was imported from. Freyberg USG with 25 stress periods, a DISV Voronoi grid, TWRI, and an SFR chain coupled to lakes. Each one is public domain or GWLab's own, and each is part of the validation suite above.
 
 ## Reporting a problem
 

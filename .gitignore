@@ -1,1 +1,10 @@
 .DS_Store
+.gwlink-lock
+.gwlink-backups/
+examples/*/logs/
+examples/*/cache/
+examples/*/runs/
+examples/*/scratch/
+examples/*/exports/
+examples/*/flows/
+examples/*/particle-tracking/
