@@ -39,6 +39,10 @@ Every model below was written by someone else. GWlink opens it, writes it back, 
 
 The round trip is a strong check on the file layer. It catches a package silently dropped, an array reshaped or a stress period lost. It is not a claim that GWlink reproduces every published figure to the last decimal, and it says nothing about whether your own model is a good model. Details in [docs/validation.md](docs/validation.md).
 
+## Examples
+
+Four small decks under [examples/](examples/) to import and run on your first session. Freyberg USG with 25 stress periods, a DISV Voronoi grid, TWRI, and an SFR chain coupled to lakes. Each one is public domain or GWLab's own, and each is part of the validation suite above.
+
 ## Reporting a problem
 
 Open an [issue](../../issues/new/choose). The HELP stage inside the app also has a *Report a problem* link that opens an email with the version and build already filled in.
