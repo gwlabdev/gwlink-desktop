@@ -6,6 +6,11 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.90] - 2026-09-16
+
+- Use cell selection tools consistently in Grid.
+
+
 ## [0.1.89] - 2026-09-15
 
 - Keep section drawing controls compact.
