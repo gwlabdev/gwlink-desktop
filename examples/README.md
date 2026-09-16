@@ -2,8 +2,6 @@
 
 Four GWlink workspaces, one per folder. Each one was made by importing a published MODFLOW deck with GWlink, writing it back and running it. So every folder holds the project GWlink saved (`project.gwlink.json`), the model GWlink wrote (`model/`, with the heads and budget of the run where they fit), the arrays it keeps beside the project (`data/`) and the deck it started from (`source/`). They are the same models GWlink's validation suite imports, writes back and runs on every build.
 
-[GWlinkViewer](https://gwlink.gwlab.cl/viewer) can open these workspaces and inspect their saved models and results. Writing or running a model requires the full GWlink edition.
-
 | Folder | Model | Engine | Grid | What it shows | Source |
 |---|---|---|---|---|---|
 | [freyberg-usg](freyberg-usg) | Freyberg MODFLOW-USG | MODFLOW-USG | DISU, 3 layers, 4,497 cells, 25 stress periods | The classic teaching model as an unstructured deck with SFR, GHB, wells and recharge through 25 periods. Good first model for TIME and RESULTS. | [FloPy examples](https://github.com/modflowpy/flopy), public domain (USGS) |

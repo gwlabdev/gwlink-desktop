@@ -1,8 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Download GWlinkViewer
-    url: https://gwlink.gwlab.cl/viewer
-    about: Free read only desktop edition for macOS and Windows.
   - name: Request access
     url: https://gwlink.gwlab.cl/request-access
     about: GWlink is in beta. Ask for a download here.
