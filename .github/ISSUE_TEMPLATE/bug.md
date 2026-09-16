@@ -5,7 +5,7 @@ labels: bug
 ---
 
 **Version and platform**
-Version from HELP → About, and macOS or Windows.
+Edition (GWlink or GWlinkViewer), version from HELP → About, and macOS or Windows.
 
 **What happened**
 What you did, what you expected, what the app did instead.

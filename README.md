@@ -6,6 +6,12 @@ Desktop application for building, running and reading MODFLOW 6 and MODFLOW-USG 
 
 GWlink is in beta and runs on macOS (Apple Silicon) and Windows. Request access at [gwlink.gwlab.cl/request-access](https://gwlink.gwlab.cl/request-access). Current version is **0.1.86**, see [CHANGELOG.md](CHANGELOG.md).
 
+## GWlinkViewer
+
+[GWlinkViewer](https://gwlink.gwlab.cl/viewer) is a free, read only desktop edition built from the same code as GWlink. It imports MODFLOW 6 and MODFLOW-USG model folders and opens `.gwlink` projects to inspect the model and its results. It cannot edit the model, run MODFLOW or save changes.
+
+GWlinkViewer is distributed through its own installers for macOS and Windows and uses a separate update channel. Its version matches the full GWlink version. It is distinct from the [MODFLOW AI web viewer](https://viewer.modflow.ai), which opens published snapshots through links in a browser.
+
 ## What it does
 
 The workflow runs left to right through the stages DATA, GRID, TIME, PACKAGES, RUN, ZBUD, RESULTS and MATCH.
@@ -50,6 +56,7 @@ Open an [issue](../../issues/new/choose). The HELP stage inside the app also has
 ## Links
 
 - Website [gwlink.gwlab.cl](https://gwlink.gwlab.cl)
+- Download GWlinkViewer [gwlink.gwlab.cl/viewer](https://gwlink.gwlab.cl/viewer)
 - Changelog [gwlink.gwlab.cl/changelog](https://gwlink.gwlab.cl/changelog)
 - Specifications, engine by engine and package by package [gwlink.gwlab.cl/specifications](https://gwlink.gwlab.cl/specifications)
 - FAQ [gwlink.gwlab.cl/faq](https://gwlink.gwlab.cl/faq)
