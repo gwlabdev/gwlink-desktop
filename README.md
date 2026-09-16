@@ -12,7 +12,7 @@ GWlink is in beta and runs on macOS (Apple Silicon) and Windows. Request access 
 
 GWlinkViewer is a free, read only desktop edition built from the same code as GWlink. It imports MODFLOW 6 and MODFLOW-USG model folders and opens `.gwlink` projects to inspect the model and its results. It cannot edit the model, run MODFLOW or save changes.
 
-GWlinkViewer is distributed through its own installers for macOS and Windows and uses a separate update channel. Its version matches the full GWlink version. It is distinct from the [MODFLOW AI web viewer](https://viewer.modflow.ai), which opens published snapshots through links in a browser.
+GWlinkViewer is distributed through its own installers for macOS and Windows and uses a separate update channel. Its version matches the full GWlink version. It is distinct from [MODFLOW AI](https://github.com/gwlabdev/modflowai-mcp), whose `open_in_viewer` tool turns a MODFLOW 6 model built and run locally into a read only browser link valid for 30 days.
 
 ## What it does
 
