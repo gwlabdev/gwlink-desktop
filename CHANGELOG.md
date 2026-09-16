@@ -6,6 +6,21 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.89] - 2026-09-15
+
+- Keep section drawing controls compact.
+
+
+## [0.1.88] - 2026-09-15
+
+- Show clear feedback while drawing 2D sections.
+
+
+## [0.1.87] - 2026-09-12
+
+- Viewer link shows the copy as it runs and uploads 16 files at a time; packaged app trusts TLS roots and carries the local API token
+
+
 ## [0.1.86] - 2026-09-10
 
 - Notebook export carries editable zone tables for recharge and hydraulic properties
