@@ -4,7 +4,7 @@ Desktop application for building, running and reading MODFLOW 6 and MODFLOW-USG 
 
 <p align="center"><img src="media/hero.gif" width="800" alt="Freyberg MODFLOW-USG head iso-surfaces spinning in the GWlink 3D viewer"></p>
 
-GWlink is in beta and runs on macOS (Apple Silicon) and Windows. Request access at [gwlink.gwlab.cl/request-access](https://gwlink.gwlab.cl/request-access). Current version is **0.1.91**, see [CHANGELOG.md](CHANGELOG.md).
+GWlink is in beta and runs on macOS (Apple Silicon) and Windows. Request access at [gwlink.gwlab.cl/request-access](https://gwlink.gwlab.cl/request-access). Current version is **0.1.92**, see [CHANGELOG.md](CHANGELOG.md).
 
 ## GWlinkViewer
 

@@ -6,6 +6,11 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.92] - 2026-09-17
+
+- Editable CSV table links for boundary records, zone categories in 2D sections, and zone fixes.
+
+
 ## [0.1.91] - 2026-09-16
 
 - Route MF6 recharge to the receiving layer and fix agent setup on Windows.
