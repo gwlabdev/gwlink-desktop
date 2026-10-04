@@ -6,6 +6,20 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.93] - 2026-10-03
+
+- Agent fixes: resend a prompt dropped on resume, in-page interface capture, add a MAW well from typed coordinates.
+
+
+- Transport (GWT) and particle tracking (PRT) are authored in PACKAGES and run
+  from RUN; RESULTS only reads them. Add them from Add Package; each field
+  saves itself (no Save button). **Action ids renamed**:
+  `results.transport.*` and `results.particleTracking.*` inputs are now
+  `props.transport.*` / `props.particleTracking.*`, runs are
+  `run.transport.*` / `run.particleTracking.*`, and the two Save actions are
+  gone. Saved agent flows that used the old ids are refused at replay
+  preflight (vanished `actionId`) and have to be recorded again.
+
 ## [0.1.92] - 2026-09-17
 
 - Editable CSV table links for boundary records, zone categories in 2D sections, and zone fixes.
