@@ -6,6 +6,11 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.97] - 2026-10-05
+
+- Windows builds are now signed with a hardware key (YubiKey).
+
+
 ## [0.1.96] - 2026-10-05
 
 - Faster import of models with many TS6 time series; boundary-condition cells keep their own package colour when terrain is on.
