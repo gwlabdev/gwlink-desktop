@@ -6,6 +6,21 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.96] - 2026-10-05
+
+- Faster import of models with many TS6 time series; boundary-condition cells keep their own package colour when terrain is on.
+
+
+## [0.1.95] - 2026-10-05
+
+- Boundary-condition cells show their own package colour when terrain is on.
+
+
+## [0.1.94] - 2026-10-05
+
+- Faster import of models with many TS6 time series (Treasure Valley: minutes to seconds).
+
+
 ## [0.1.93] - 2026-10-03
 
 - Agent fixes: resend a prompt dropped on resume, in-page interface capture, add a MAW well from typed coordinates.
