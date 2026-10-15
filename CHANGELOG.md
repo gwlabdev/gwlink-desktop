@@ -6,6 +6,11 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.98] - 2026-10-15
+
+- Fix import of MF6 models with adaptive time stepping (ATS) on more than one period
+
+
 ## [0.1.97] - 2026-10-05
 
 - Windows builds are now signed with a hardware key (YubiKey).
