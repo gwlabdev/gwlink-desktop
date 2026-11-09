@@ -6,6 +6,11 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.1.99] - 2026-11-09
+
+- Fix the startup Retry flash, the agent on Windows without Git Bash, and MFUSG models with a structured DIS (package support, notebook, save and reopen)
+
+
 ## [0.1.98] - 2026-10-15
 
 - Fix import of MF6 models with adaptive time stepping (ATS) on more than one period
