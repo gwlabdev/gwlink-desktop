@@ -6,6 +6,11 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-16
+
+- New vorflow meshing engine with identical meshes on macOS and Windows, plus MF6 transport import and sorption improvements
+
+
 ## [0.1.99] - 2026-11-09
 
 - Fix the startup Retry flash, the agent on Windows without Git Bash, and MFUSG models with a structured DIS (package support, notebook, save and reopen)
