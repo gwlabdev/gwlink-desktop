@@ -6,6 +6,47 @@ All notable changes to GWlink are recorded here. Format follows
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-22
+
+- Quadtree grids stay inside the domain and keep their holes (mesh engine 4), faster results and imports on large models, and the groundwork for the in-browser viewer
+
+
+- Fix quadtree grids that had active cells outside the domain, or inside a
+  hole of it: a cell that only touched a boundary edge lying on a base-grid
+  line was active (2.5 % to 37.6 % extra area on the recipes measured), and
+  the boundary's holes never reached gridgen. A boundary edge on a grid line
+  no longer crashes quadtree generation. GWlink now builds and runs its own
+  gridgen (GRIDGEN 1.0.02 with three patches) instead of the one in the
+  MODFLOW-ORG executable pack, from the same source and patches as its
+  WebAssembly build, which gives the same grid byte for byte. Mesh engine
+  bumped to `MESH_ENGINE_VERSION` 4: quadtree recipes with such an edge or a
+  hole build a different mesh; Voronoi and DIS are unchanged
+
+- Head contours, iso surfaces and cross-sections triangulate the cell centres
+  the same way on every platform, Pyodide included: ties on regular grids are
+  checked with an exact in-circle test and the triangles come in a fixed
+  order, and iso surfaces evaluate their interpolation in numpy instead of
+  matplotlib's C++ (fused multiply-adds on arm64). Contour lines can come out
+  in a different order or start at another vertex (same geometry in all 233
+  probe files); iso surface vertices move by at most one float32 step (6e-5 m
+  on a 1.5 km model); one cross-section sample crossed its 4th-decimal
+  rounding
+
+- Iso surfaces of DISV models clip against the mesh footprint measured in
+  world coordinates (the union now shared with the grid metrics, computed
+  once per grid), and locate lattice points without matplotlib's trapezoid
+  map, so a vertex can move by floating-point rounding (measured: 91 of
+  1.5 M coordinates, by 2e-15 m, in one of 52 probe models; none in the
+  others); large meshes open the iso surface, the cross-section and the
+  grid metrics much faster
+
+- Fix Voronoi grids that aborted with "Could not patch 1 boundary gap" when a
+  boundary face came out tilted into a thin sliver (seen at a shallow convex
+  corner): boundary cell faces now lie exactly on the domain edge.
+  Mesh engine bumped to `MESH_ENGINE_VERSION` 3; the measured recipes kept
+  their cell count (a domain with sharp corners can change by one cell) and
+  boundary vertices move slightly
+
 ## [0.2.0] - 2026-11-16
 
 - New vorflow meshing engine with identical meshes on macOS and Windows, plus MF6 transport import and sorption improvements
